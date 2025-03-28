@@ -19,7 +19,7 @@ function countCharacters(str) {
     return count;
 }
 
-console.log(countCharacters("hello")); // Output: 5
+console.log(countCharacters("style")); // Output: 5
 
 /*Capitalize Words*/
 function capitalizeWords(sentence) {
@@ -60,9 +60,9 @@ function findMinimum(arr) {
 }
 
 // Example
-var numbers = [4, 2, 9, 1, 5];
-console.log("Max:", findMaximum(numbers)); // 9
-console.log("Min:", findMinimum(numbers)); // 1
+var numbers = [5, 2, 3, 4, 8];
+console.log("Max:", findMaximum(numbers)); // 8
+console.log("Min:", findMinimum(numbers)); // 2
 
 /*Sum of Array*/
 function sumArray(arr) {
@@ -74,15 +74,15 @@ function sumArray(arr) {
 }
 
 // Example
-console.log("Sum:", sumArray([1, 2, 3, 4])); // 10
+console.log("Sum:", sumArray([3, 1, 2, 2])); // 8
 
 /*Filter Array*/
 function filterGreaterThanFive(arr) {
-    var result = []; // Empty array to store filtered values
+    var result = []; 
 
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] > 5) {
-            result.push(arr[i]); // Add to result if condition is true
+            result.push(arr[i]); 
         }
     }
 
@@ -90,7 +90,7 @@ function filterGreaterThanFive(arr) {
 }
 
 // Example
-console.log(filterGreaterThanFive([3, 7, 2, 9, 4])); // [7, 9]
+console.log(filterGreaterThanFive([2, 8, 2, 4, 7])); // [8, 7]
 
 /*Factorial*/
 function factorial(n) {
@@ -122,10 +122,11 @@ function isPrime(n) {
 }
 
 // Example
-console.log("Is 7 prime?", isPrime(7)); // true
-console.log("Is 10 prime?", isPrime(10)); // false
+console.log(isPrime(3)); // true
+console.log(isPrime(4)); // false
 
 /*Fibonacci Sequence */
+//F(n) = F(n-1) + F(n-2)
 function FibonacciSequence(n) {
     var sequence = [];
 
@@ -144,7 +145,7 @@ function FibonacciSequence(n) {
 }
 
 // Example
-console.log(FibonacciSequence(7)); // Output: [0, 1, 1, 2, 3, 5, 8]
+console.log(FibonacciSequence(10)); // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 
 
